@@ -1,4 +1,4 @@
-# Projeto CVM-ETL
+# StartDataProject
 
 Este repositório contém uma estrutura padrão para iniciar um projeto na área de Dados. Abaixo, você encontrará uma descrição de cada pasta e arquivo presente no repositório.
 
