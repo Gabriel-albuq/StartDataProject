@@ -1,0 +1,27 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    
+-   repo: https://github.com/psf/black
+    rev: 23.9.1
+    hooks:
+    -   id: black
+   
+-   repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1
+    hooks:
+    -   id: isort
+
+-   repo: https://github.com/blue-yaml/blue
+    rev: v0.9.1
+    hooks:
+    -   id: blue
+
+-   repo: https://github.com/PyCQA/pydocstyle
+    rev: v6.3.0
+    hooks:
+    -   id: pydocstyle

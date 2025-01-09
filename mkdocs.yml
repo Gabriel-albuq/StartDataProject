@@ -1,0 +1,20 @@
+site_name: StartDataProject
+theme:
+  name: material # or other theme
+  palette:
+    primary: blue
+  language: en
+
+repo_name: "Gabriel-albuq/StartDataProject"
+repo_url: "https://github.com/Gabriel-albuq/StartDataProject" # Para hospedar a documentação no github
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python

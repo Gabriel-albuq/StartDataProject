@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "StartDataProject"
+version = "0.1.0"
+description = ""
+authors = ["Gabriel-albuq <gabriel.albuquerque05@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+blue = "^0.9.1"
+isort = "^5.13.2"
+pydocstyle = "^6.3.0"
+pytest = "^8.3.4"
+pre-commit = "^4.0.1"
+taskipy = "^1.14.1"
+mkdocs = "^1.6.1"
+mkdocstrings-python = "^1.13.0"
+pygments = "^2.19.1"
+mkdocs-material = "^9.5.49"
+pymdown-extensions = "^10.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+known_third_party = []
+
+[tool.taskipy.tasks]
+format = "isort . && blue . && pydocstyle ."
+test = "poetry run pytest -v"
+kill_doc = "kill -9 $(lsof -t -i :8000)"
